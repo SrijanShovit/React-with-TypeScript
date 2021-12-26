@@ -6,8 +6,8 @@ type AuthUser = {
 }
 
 export const User = () => {
-    //explicitily specify type in useState hook
-    const [user,setUser] = useState<AuthUser | null>(null)
+    //when we r sure that empty object is of type AuthUser
+    const [user,setUser] = useState<AuthUser>({} as AuthUser)
     const handleLogin = () => {
         setUser({
             name: 'Vishwas',
@@ -15,15 +15,15 @@ export const User = () => {
         })
     }
 
-    const handleLogout = () => {
-        setUser(null)
-    }
+    // const handleLogout = () => {
+    //     setUser(null)
+    // }
     return (
         <div>
             <button onClick={handleLogin}>Login</button>
-            <button onClick={handleLogout}>Logout</button>
-            <div>User name is {user?.name}</div>
-            <div>User email is {user?.email}</div>
+            {/* <button onClick={handleLogout}>Logout</button> */}
+            <div>User name is {user.name}</div>
+            <div>User email is {user.email}</div>
         </div>
     )
 }
