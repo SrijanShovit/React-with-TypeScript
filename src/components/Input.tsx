@@ -6,6 +6,7 @@ type InputProps = {
 }
 
 export const Input = (props: InputProps) => {
+    //the props can also be used after  destructuring as usual
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) =>{
         console.log(event)
     }
