@@ -10,6 +10,8 @@ import { Input } from './components/Input';
 import { Container } from './components/Container';
 import { Box } from './components/context/Box';
 import { ThemeContextProvider } from './components/context/ThemeContext';
+import {UserContextProvider } from './components/context/UserContext';
+import {User} from './components/context/User';
 
 function App() {
   const personName = {
@@ -50,9 +52,12 @@ function App() {
     //   <Container styles={{border: '1px solid black',padding: '1rem'}} />
     return (
       <div className="App">
-    <ThemeContextProvider>
+    <UserContextProvider>
+      <User/>
+    </UserContextProvider>
+    {/* <ThemeContextProvider>
       <Box/>
-    </ThemeContextProvider>
+    </ThemeContextProvider> */}
     </div>
   );
 }
