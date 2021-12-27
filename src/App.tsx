@@ -17,6 +17,7 @@ import {UserContextProvider } from './components/context/UserContext';
 import {User} from './components/context/User';
 import { Counter } from './components/class/Counter';
 import { RandomNumber } from './components/restriction/RandomNumber';
+import { Toast } from './components/TemplateLiterals/Toast';
 
 function App() {
   const personName = {
@@ -75,7 +76,9 @@ function App() {
       onClick={(item) => console.log(item)}
     /> */}
 
-    <RandomNumber value={10} isPositive/>
+    {/* <RandomNumber value={10} isPositive/> */}
+
+    <Toast position="center"/>
     </div>
   );
 }
