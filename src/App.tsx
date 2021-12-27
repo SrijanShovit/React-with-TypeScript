@@ -18,6 +18,8 @@ import {User} from './components/context/User';
 import { Counter } from './components/class/Counter';
 import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/TemplateLiterals/Toast';
+import { CustomButton } from './components/html/Button';
+import { CustomInput } from './components/html/Input';
 
 function App() {
   const personName = {
@@ -78,7 +80,11 @@ function App() {
 
     {/* <RandomNumber value={10} isPositive/> */}
 
-    <Toast position="center"/>
+    {/* <Toast position="center"/> */}
+
+    <CustomButton variant="primary" onClick={() => console.log('Clicked')}>Children props</CustomButton>
+
+    <CustomInput />
     </div>
   );
 }
