@@ -16,6 +16,7 @@ import { ThemeContextProvider } from './components/context/ThemeContext';
 import {UserContextProvider } from './components/context/UserContext';
 import {User} from './components/context/User';
 import { Counter } from './components/class/Counter';
+import { RandomNumber } from './components/restriction/RandomNumber';
 
 function App() {
   const personName = {
@@ -67,12 +68,14 @@ function App() {
 
     {/* <Private isLoggedIn={true} Component={Profile}/> */}
 
-    <List items={['Batman','Superman','Wonder Woman']}
+    {/* <List items={['Batman','Superman','Wonder Woman']}
       onClick={(item) => console.log(item)}
     />
     <List items={[1,2,3,4]}
       onClick={(item) => console.log(item)}
-    />
+    /> */}
+
+    <RandomNumber value={10} isPositive/>
     </div>
   );
 }
