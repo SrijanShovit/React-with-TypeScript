@@ -1,6 +1,7 @@
 import {Greet} from './components/Greet'
 import {Person} from './components/Person'
 import './App.css';
+import {List} from './components/generics/List';
 import {Private} from './components/auth/Private';
 import {Profile} from './components/auth/Profile';
 import { PersonList } from './components/PersonList';
@@ -64,7 +65,14 @@ function App() {
 
     {/* <Counter message='The count value is' /> */}
 
-    <Private isLoggedIn={true} Component={Profile}/>
+    {/* <Private isLoggedIn={true} Component={Profile}/> */}
+
+    <List items={['Batman','Superman','Wonder Woman']}
+      onClick={(item) => console.log(item)}
+    />
+    <List items={[1,2,3,4]}
+      onClick={(item) => console.log(item)}
+    />
     </div>
   );
 }
