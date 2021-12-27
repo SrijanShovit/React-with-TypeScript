@@ -1,16 +1,16 @@
 ### 🧐What all I learnt💥
 
--> Basic & Advanced Props
--> Events & Styles
--> useState
--> useReducer
--> Context API
--> useRef
--> Class Components
--> Component as Props
--> Generics
--> Restricting Props
--> Template literals & Exclude
--> Wrapping HTML & Omit
--> Extracting component prop types
--> Polymorphic Components
+1. Basic & Advanced Props
+2. Events & Styles
+3. useState
+4. useReducer
+5. Context API
+6. useRef
+7. Class Components
+8. Component as Props
+9. Generics
+10. Restricting Props
+11. Template literals & Exclude
+12. Wrapping HTML & Omit
+13. Extracting component prop types
+14. Polymorphic Components
