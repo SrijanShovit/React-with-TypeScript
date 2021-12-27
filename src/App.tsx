@@ -1,6 +1,8 @@
 import {Greet} from './components/Greet'
 import {Person} from './components/Person'
 import './App.css';
+import {Private} from './components/auth/Private';
+import {Profile} from './components/auth/Profile';
 import { PersonList } from './components/PersonList';
 import { Status } from './components/Status';
 import {Heading} from './components/Heading';
@@ -60,7 +62,9 @@ function App() {
       <Box/>
     </ThemeContextProvider> */}
 
-    <Counter message='The count value is' />
+    {/* <Counter message='The count value is' /> */}
+
+    <Private isLoggedIn={true} Component={Profile}/>
     </div>
   );
 }
