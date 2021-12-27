@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { Greet } from '../Greet'
+//extracted prop types of Greet into CustomComponent
 export const CustomComponent = (props: React.ComponentProps<typeof Greet>) => {
     return (
         <div>

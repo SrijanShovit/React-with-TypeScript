@@ -20,6 +20,7 @@ import { RandomNumber } from './components/restriction/RandomNumber';
 import { Toast } from './components/TemplateLiterals/Toast';
 import { CustomButton } from './components/html/Button';
 import { CustomInput } from './components/html/Input';
+import {Text} from './components/polymorphic/Text';
 
 function App() {
   const personName = {
@@ -82,9 +83,14 @@ function App() {
 
     {/* <Toast position="center"/> */}
 
-    <CustomButton variant="primary" onClick={() => console.log('Clicked')}>Children props</CustomButton>
+    {/* <CustomButton variant="primary" onClick={() => console.log('Clicked')}>Children props</CustomButton>
 
-    <CustomInput />
+    <CustomInput /> */}
+
+   {/* Polymorphic */}
+    <Text as='h1' size='lg'>Heading</Text>
+    <Text as='p' size='md'>Paragraph</Text>
+    <Text as='label' size='sm' htmlFor='someId' color='secondary'>Label</Text>
     </div>
   );
 }
